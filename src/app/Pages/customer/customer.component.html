@@ -1,0 +1,24 @@
+<!-- <p>customer works!</p> -->
+<div class="container">
+    <h1>customer form</h1>
+    <br> 
+    <form #basicForm = "ngForm" (submit)="saveData(basicForm.value)" >
+        <label for="name">customer name:</label>
+        <input type="text" id="name"  ngmodel name = "name" placeholder="Enter the customer name">
+        <br><br>
+        <label for="mobile">customer moile:</label>
+        <input type="number" id="mobile" 
+        ngmodel name = "mobile" placeholder="Enter the customer mobile">
+        <br><br> 
+        <label for ="email">customer email:</label>
+        <input type="email" id="email" 
+        ngmodel name = "email" placeholder="Enter the customer email">
+        <br><br>
+        <label for="city">customer city:</label>
+        <input type="text" id="city" 
+        ngmodel name = "city" placeholder="Enter the customer city">
+        <br><br>
+        <button class="btn btn-btn-primary">register</button>
+    </form>
+    </div>
+    
